@@ -7,7 +7,7 @@ public class ParallelFor
     /*
      * Exercise:
      *  Use `Parallel.For` in combination with `CpuBound.Compute` to sort multiple arrays of size 10..15 in parallel
-     *  Use limit the parallelism to 4
+     *  Limit the parallelism to 4
      *  Discuss with your peers what happens and why
      *  Play with the parallelism constraints
      *
