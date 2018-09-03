@@ -5,9 +5,17 @@ using System.Threading.Tasks;
 
 public static class Helpers
 {
+    static LimitedConcurrencyLevelTaskScheduler scheduler = new LimitedConcurrencyLevelTaskScheduler(1);
+
     public static void PrintCurrentThread(this object value)
     {
         Console.WriteLine($"-- Current Thread {Thread.CurrentThread.ManagedThreadId}");
+    }
+
+    public static void PrintCurrentContext(this object runnable, string message = null)
+    {
+        var visible = TaskScheduler.Current == scheduler ? "visible" : "not visible";
+        Console.WriteLine($"--  Context is '{visible}'. {message}");
     }
 
     public static async Task TaskState(this Task task)
@@ -27,5 +35,14 @@ public static class Helpers
             Console.WriteLine($"-- Execution time: {stopWatch.Elapsed}");
             PrintCurrentThread(null);
         }
+    }
+
+    public static Task WrapInContext(this object value, Func<Task> action)
+    {
+        return Task.Factory.StartNew(() =>
+        {
+            return action();
+        }, CancellationToken.None, TaskCreationOptions.None, scheduler)
+        .Unwrap();
     }
 }
