@@ -7,9 +7,9 @@ public static class Helpers
 {
     static LimitedConcurrencyLevelTaskScheduler scheduler = new LimitedConcurrencyLevelTaskScheduler(1);
 
-    public static void PrintCurrentThread(this object value)
+    public static void PrintCurrentThread(this object value, string message = null)
     {
-        Console.WriteLine($"-- Current Thread {Thread.CurrentThread.ManagedThreadId}");
+        Console.WriteLine($"-- Current Thread {Thread.CurrentThread.ManagedThreadId}. {message}");
     }
 
     public static void PrintCurrentContext(this object runnable, string message = null)

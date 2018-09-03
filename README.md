@@ -9,3 +9,6 @@ Workshop Material for the async/tpl
 1. TaskRun
 1. TaskFactoryStartNew
 1. SimpleAsync
+1. ConfigureAwait
+1. AsyncAllTheWay
+1. SequentialExecution
