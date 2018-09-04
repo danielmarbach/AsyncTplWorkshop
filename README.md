@@ -12,3 +12,5 @@ Workshop Material for the async/tpl
 1. ConfigureAwait
 1. AsyncAllTheWay
 1. SequentialExecution
+1. ConcurrentExecutionAll
+1. ConcurrentExecutionOne

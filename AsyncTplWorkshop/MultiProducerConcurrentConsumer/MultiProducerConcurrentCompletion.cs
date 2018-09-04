@@ -35,7 +35,7 @@ namespace AsyncTplWorkshop.MultiProducerConcurrentConsumer
         /// Specifies a pump function. As soon as items are available pumping begins within the specified constraints
         /// </summary>
         /// <remarks>This member is not thread safe.</remarks>
-        public void Start(Func<List<TItem>, int, object, CancellationToken, Task> pump)
+        public void Start(Func<IEnumerable<TItem>, int, object, CancellationToken, Task> pump)
         {
             Start(pump, null);
         }
@@ -44,7 +44,7 @@ namespace AsyncTplWorkshop.MultiProducerConcurrentConsumer
         /// Specifies a pump function. As soon as items are available pumping begins within the specified constraints
         /// </summary>
         /// <remarks>This member is not thread safe.</remarks>
-        public void Start(Func<List<TItem>, int, object, CancellationToken, Task> pump, object state)
+        public void Start(Func<IEnumerable<TItem>, int, object, CancellationToken, Task> pump, object state)
         {
 
         }
