@@ -14,3 +14,4 @@ Workshop Material for the async/tpl
 1. SequentialExecution
 1. ConcurrentExecutionAll
 1. ConcurrentExecutionOne
+1. ParallelExecution
