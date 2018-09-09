@@ -15,3 +15,6 @@ Workshop Material for the async/tpl
 1. ConcurrentExecutionAll
 1. ConcurrentExecutionOne
 1. ParallelExecution
+1. CancelTask
+
+1. YourPump
