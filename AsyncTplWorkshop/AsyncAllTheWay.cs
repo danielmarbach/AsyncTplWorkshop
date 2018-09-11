@@ -14,6 +14,7 @@ public class AsyncAllTheWay
      *
      * Bonus:
      *  - There are three ways to solve this problem? Can you come up with them?
+     *  - What is the difference between .Wait() or .GetAwaiter().GetResult(), try it out by throwing an exception
      *
      * Hint:
      *  - You can use `PrintCurrentThread` or other Helpers to print i.ex. the current managed thread ID
