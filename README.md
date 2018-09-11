@@ -9,6 +9,7 @@ Workshop Material for the async/tpl
 1. TaskRun
 1. TaskFactoryStartNew
 1. SimpleAsync
+1. FireAndForgot
 1. ConfigureAwait
 1. AsyncAllTheWay
 1. SequentialExecution
@@ -16,5 +17,6 @@ Workshop Material for the async/tpl
 1. ConcurrentExecutionOne
 1. ParallelExecution
 1. CancelTask
+1. CancelTaskOperation
 
 1. YourPump
