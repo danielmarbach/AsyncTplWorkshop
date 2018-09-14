@@ -19,5 +19,7 @@ Workshop Material for the async/tpl
 1. ParallelExecution
 1. CancelTask
 1. CancelTaskOperation
-
+1. ConcurrencyLimit
 1. YourPump
+1. TaskCompletionSource
+1. MultiProducerConcurrentConsumer
