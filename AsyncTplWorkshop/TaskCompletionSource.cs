@@ -17,9 +17,11 @@ public class TaskCompletionSource
      *
      * Bonus:
      *  - Implement cancellation token support to cancel the task when non of the events are fired after some time
+     *  - Look at the constructor overload of TaskCompletionSource that allows to pass in continuation options and
+     *  read up on RunContinuationsAsynchronously. What does it do and why would you want to use it? What would
+     *  have to do when this flag is not available in .NET Framework pre 4.6.1 area?
      *
      * Hint:
-     *  - The semaphore has to be acquired and released
      */
     private Task ImplementHere()
     {
