@@ -16,7 +16,6 @@ public class ParallelInvoke
      * Bonus:
      *  - What happens to the thread of execution, is it blocked or not?
      *  - What could you change to address the above effect?
-     *  - What sort of magic is Parallel.For using behind the scenes to take the above change into account?
      *
      * Hint:
      *  - You can use `PrintCurrentThread` or other Helpers to print i.ex. the current managed thread ID

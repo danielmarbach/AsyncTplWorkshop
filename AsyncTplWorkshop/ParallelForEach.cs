@@ -25,12 +25,6 @@ public class ParallelForEach
      */
     private Task ImplementHere()
     {
-        var options = new ParallelOptions()
-        {
-            MaxDegreeOfParallelism = 4,
-        };
-
-        Parallel.ForEach(Enumerable.Range(5, 10), options, CpuBound.Compute);
         return Task.CompletedTask;
     }
 
