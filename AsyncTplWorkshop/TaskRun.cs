@@ -9,7 +9,7 @@ public class TaskRun
 {
     /*
      * Exercise:
-     *  Use `Task.Run` in combination with `CpuBound.Compute` to sort one array of size 10..13 in parallel
+     *  Use `Task.Run` in combination with `CpuBound.Compute` to sort multiples arrays of size 10..13 in parallel
      *  Discuss with your peers what happens and why
      *
      * Bonus:
