@@ -26,7 +26,7 @@ Workshop Material for the async/tpl
 
 ## Links & Material
 
-- [Solutions](https://github.com/danielmarbach/Await.HeadExplosion/Presentation) requires .NET Core 2.1 and higher, run with `dotnet run -f netcoreapp2.1`
+- [Solutions](https://github.com/danielmarbach/Await.HeadExplosion/tree/master/Presentation) requires .NET Core 2.1 and higher, run with `dotnet run -f netcoreapp2.1`
 - [MultiProducerConcurrentConsumer](https://github.com/Particular/NServiceBus.AzureServiceBus/blob/develop/src/Transport/Receiving/MultiProducerConcurrentCompletion.cs)
 - [Rearchitect your code towards async / await](https://vimeo.com/172111826)
 - [Six Essential Tips for Async](http://channel9.msdn.com/Series/Three-Essential-Tips-for-Async)
